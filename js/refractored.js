@@ -6,7 +6,7 @@ $(document).ready(function() {
 		
 		var input = $('#maxNumber');
 
-		if (!isNaN(input.val()))
+		if (!isNaN(input.val()) && (input.val() % 1 != 0))
 		{
 			refresh();
 			fizzbuzzMe(input.val());
@@ -14,7 +14,7 @@ $(document).ready(function() {
 		}
 		else
 		{
-			$('#errorMsg').text("Invalid input. Enter numbers only.");
+			$('#errorMsg').text("Invalid input. Enter whole numbers only.");
 		}
 	});
 
