@@ -3,15 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FizzBuzz Challenge</title>
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
 	<script src="js/refractored.js"></script>
 </head>
 <body>
 	<span>Max number: </span>
-	<input id="maxNumber" type="text" />
-	<button id="submitMaxNumber" type="button" on>Go</button>
+	<input id="maxNumber" type="text" onkeypress="if(event.keyCode == 13)runFizzBuzz();"/>
+	<button id="submitMaxNumber" type="button" onClick="runFizzBuzz();">Go</button>
 	<span id="errorMsg"></span>
 	<ul id="fizzbuzz">
+		<li>Try one out</li>
+		<li>Try one out</li>
+		<li>Try one out</li>
+		<li>Try one out</li>
+		<li>Try one out</li>
 	</ul>
 </body>
 </html>
